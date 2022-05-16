@@ -16,8 +16,8 @@ end
 [ntimesteps , rMin, rMax ,ss ,ncs ,plotOn ,azimuthalSet ,azimuthalSetSize ,printStatus ,lags, blocLength, saveDir]=constants();
 
 %%
-%genStr=input("(L)oad or (G)enerate? If load eg c2t4\n> ","s");
-genStr="G";
+genStr=input("(L)oad or (G)enerate? If load eg c2t4\n> ","s");
+%genStr="G";
 if genStr=="G" ||  genStr=="g"
   sprintf('%s%s%s%s%s%s%s%s','**************',newline,'Generating to file C',num2str(ncs),'t',num2str(ntimesteps),newline,'**************'   )
 emptyStr=[];
