@@ -144,7 +144,7 @@ end % timeBloc
 % need radial trapz. 
 % then eigs calculation.
 
-%trapz() in r.
+%trapz() in r.x
 
 
 

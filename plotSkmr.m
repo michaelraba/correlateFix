@@ -12,7 +12,7 @@ if isGraph=="graph"
   %figure;
   hold on;
   cou = 1
-  for c=1:2
+  for c=1:5
       subplot(3,1,cou);
 
       %for t=1:ntimesteps
@@ -20,6 +20,8 @@ if isGraph=="graph"
       
       labelStr = ['(m,k)=(', num2str(azimuthalSet(m)),',',num2str(c),')'];
       pp=plot(A,real(plotObject(c).circle(m).dat((end-1)/2:end) )/ntimesteps,"DisplayName",labelStr);
+      tiSt=['Spanwise mode: ' num2str(c)  ];
+      title(tiSt, 'FontName','capitana','FontSize',12,'interpreter','latex')
       legend();
       %avgTimeEnd(1).circle(1).dat  
       %pp=plot(A,real(plotObject(c).circle(m).dat /ntimesteps),"DisplayName",labelStr)
